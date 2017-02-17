@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<link rel="stylesheet" href="Buoi 4.css">
+	<title> Bài tập 2</title>
+</head>
+<body>
+	<div class="header">
+		<div><h1 id="titleWeb">NHÀ HÀNG HẢI SẢN MINH LONG</h1></div>
+			<p id="diachi">Địa chỉ: Nhà hàng hải sản MinhLong - Điện thoại 043 763856 -3 562 693</p>
+			<div id="menuHeader">
+				<ul>
+					<li><a href="http://www.24h.com.vn">Trang chủ</a></li>
+					<li ><a href="http://www.24h.com.vn">| Menu     |</a></li>
+					<li ><a href="http://www.24h.com.vn">| Đồ Uống  |</a></li>
+					<li ><a href="http://www.24h.com.vn">| Hình Ảnh |</a></li>
+					<li ><a href="http://www.24h.com.vn">| Sự kiện  |</a></li>
+					<li ><a href="http://www.24h.com.vn">| Liên hệ  |</a></li>
+					<li ><a href="http://www.24h.com.vn">| Góp ý    |</a></li>
+				</ul>
+		</div>
+	</div>
+	<div class="content">
+		<div class="content-center">
+			<div class="content-center-left">
+				<div class="content-center-left1">
+					<ul>
+						<li id="menu-content-left1" ><a href="http://www.24h.com.vn">Món ăn đặc trưng</a></li>
+						<li id="menu-content-left1"><a href="http://www.24h.com.vn">Món ăn mới</a></li>
+						<li id="menu-content-left1"><a href="http://www.24h.com.vn">Món ăn theo mùa</a></li>
+						<li id="menu-content-left1"><a href="http://www.24h.com.vn">Ẩm thực nước ngoài</a></li>
+						<li id="menu-content-left1"><a href="http://www.24h.com.vn">Ẩm thực Việt Nam</a></li>
+						<li id="menu-content-left1"><a href="http://www.24h.com.vn">Món ăn đặc trưng</a></li>
+					</ul>
+				</div>
+				<div class="content-center-left2">
+					<div id="box-content-left">
+						<img src="img/balo.jpg" style="width:150px;">
+					</div>
+				</div>
+				<div class="content-center-left3">
+					<div id="box-content-left">
+						<p style="color:red;font-family:newfont;font-size:70%;padding-top:40px">ĐĂNG KÝ NHẬN BẢN TIN TỪ MING DARGON</p>
+						<p style="padding-top:20px;">Để nhận được tin,lời mời và đề nghị đặc biệt trực tiếp đến hộp thư của bạn</p>
+						<input type="button" name="btndangky" value="Đăng ký" id="button-content-left3"></input>
+					</div>
+				</div>
+			</div>
+			<div class="content-center-right">
+				<div class="content-center-right1">
+					<div class="content-center-right11">
+						<div class="content-center-right11-left">
+							<h2 style="color:orange;font-family:newfont;">MING DARGON</h2>
+							<h3 style="padding-top:10px;color:gray"><b>GIỚI THIỆU</b></h3>
+							<p style="padding-top:5px;text-align:justify">Những món hải sản tươi ngon,hấp dẫn như sashimi,tôm hùm,cá tầm,cá mú với cách chế biến đặc biệt của nhà hàng Ngọc Trai sẽ giúp khách hàng giải nhiệt trong ngày hè.Những món hải sản tươi ngon,hấp dẫn như sashimi,tôm hùm,cá tầm,cá mú với cách chế biến đặc biệt của nhà hàng Ngọc Trai sẽ giúp khách hàng giải nhiệt trong ngày hè.Những món hải sản tươi ngon,hấp dẫn như sashimi,tôm hùm,cá tầm,cá mú với cách chế biến đặc biệt của nhà hàng.</p>
+							<a href="#" style="padding-left:200px">Xem hết</a>
+						</div>
+						<div class="content-center-right11-right">
+							<img class="mySlides" src="img/anh1.jpg" style="width:100%;height:100%">
+							<img class="mySlides" src="img/cachien.JPG" style="width:100%;height:100%">
+							<img class="mySlides" src="img/cahap.jpg" style="width:100%;height:100%">
+							<img class="mySlides" src="img/nhanvien.jpg" style="width:100%;height:100%">
+							<a id="btnPervious" onclick="plusDivs(-1)" style=""><img src="img/left.gif" ></a>
+							<a id="btnNext" onclick="plusDivs(1)"><img src="img/right.gif" ></a>
+							<script type="text/javascript">
+								var slideIndex = 1;
+								showDivs(slideIndex);
+								function plusDivs(n) {
+								  showDivs(slideIndex += n);
+								}
+								function showDivs(n) {
+								  var x = document.getElementsByClassName("mySlides");
+								  if (n > x.length) {slideIndex = 1}
+								  if (n < 1) {slideIndex = x.length}
+								  for (var i = 0; i < x.length; i++) {
+								     x[i].style.display = "none";
+								  }
+								  x[slideIndex-1].style.display = "block";
+								}
+							</script>
+						</div>
+					</div>
+					<div style="width:800px;">
+						<hr style="margin-left:30px;border-color:orange;">
+					</div>
+
+					<div class="content-center-right12">
+						<div class="content-center-right12-left">
+							<h2 style="padding-top:10px;color:gray">MÓN ĂN CHÍNH</h2>
+							<p style="padding-top:5px;text-align:justify;">Những món hải sản tươi ngon,hấp dẫn như sashimi,tôm hùm,cá tầm,cá mú với cách chế biến đặc biệt của nhà hàng Ngọc Trai sẽ giúp khách hàng giải nhiệt trong ngày hè.Những món hải sản tươi ngon,hấp dẫn như sashimi,tôm hùm,cá tầm,cá mú với cách chế biến đặc biệt của nhà hàng Ngọc Trai sẽ giúp khách hàng giải nhiệt trong ngày hè.Những món hải sản tươi ngon,hấp dẫn như sashimi,tôm hùm,cá tầm,cá mú với cách chế biến đặc biệt của nhà hàng.</p>
+						</div>
+						<div style="width:200px;height:200px;float:left;background:yellow;margin:48px 0 0 30px;text-align:center;">
+							<img src="img/anh2.jpg" style="width:100%;height:100%;">
+						</div>
+						<div style="width:200px;height:200px;float:left;background:yellow;margin:48px 0 0 50px;text-align:center;">
+							<img src="img/anh3.jpg" style="width:100%;height:100%;">
+						</div>
+					</div>
+				</div>
+				<div style="width:250px;height:50px;float:left;margin-top:10px;font-style:200%">
+					<p><b>Giờ mở cửa:11h30 đến 14h00</b></p>
+					<p style="margin-left:85px;"><b>17h00 đến 22h00</b></p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css", href="login.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var user, pass;
+            $("#btnLogin").click(function () {
+                user = $('#user').val();
+                pass = $('#pass').val();
+                $.post("http://localhost:3000/login",{user:user,pass:pass})
+            });
+        });
+    </script>
+</head>
+<body>
+<input type="TEXT" id="user" size="30"><br>
+<input style="margin:2px 0 10px 0" type="password" id="pass" size="30"><br>
+<input type="button" id="btnLogin" value="Sign In">
+</body>
+</html>
+
